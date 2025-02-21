@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="main.html">My Portfolio</a>
+            </div>
+            <nav class="nav">
+                <ul id="head">
+                    <li><a href="index.html#first">HOME</a></li>
+                    <li><a href="contact.html#about">ABOUT</a></li>
+                    <li><a href="contact.html#skills">SKILLS</a></li>
+                    <li><a href="contact.html#work-experience">WORK EXPERIENCE</a></li>
+                    <li><a href="contact.html#projects">PROJECTS</a></li>
+                    <li><a href="contact.html#contact">CONTACT</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="am">
+        <h1>Hi, <br> I' am Web Developer</h1>
+    </div>
+    
+    <div>
+        <img class="img" src="pic.png">
+    </div>
+
+    <button id="button" onclick="window.location.href='contact.html'">CONTACT ME</button>
+
+    <footer class="footer">
+        <ul class="social">
+            <li>
+                <a href="https://www.linkedin.com/in/anthony-ariik-mathiang-43812a308" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/offside_legend?igsh=MTdiNmExMjhuNnpibA==" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@ariikoj" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/share/1BVDrdrXgS/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+        </ul>
+        <p>Email: <strong>ariikmathiang@gmail.com</strong></p> 
+        <p><strong>Tell: +250794422692</strong></p>   
+        <p>Copyright © 2025 Anthony Ariik. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector("#head").classList.toggle("active");
+        }
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
